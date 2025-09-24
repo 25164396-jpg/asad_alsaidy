@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page with JS Effects</title>
+    <link rel="stylesheet" href="../8/project/CSS/style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+
+        .logo {
+            font-size: 1.6rem;
+            font-weight: bold;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav-list a:hover {
+            color: #ffeb3b;
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .content-box {
+            background: #fff;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+            opacity: 0;
+        }
+
+        .fade-in {
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        img {
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+            text-align: center;
+            padding: 8px;
+        }
+
+        th {
+            background: #00c6ff;
+            color: white;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.2);
+            color: white;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+        /* الثيم الليلي */
+.dark-mode {
+    background: #1e1e1e !important;
+    color: #ffffff;
+}
+
+.dark-mode .content-box {
+    background: #333 !important;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .header,
+.dark-mode .footer {
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* زر تبديل الثيم */
+.theme-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.theme-btn:hover {
+    background: #e68900;
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- رأس الصفحة -->
+    <header class="header">
+        <div class="logo">My Website</div>
+        <ul class="nav-list">
+            <li><a href="#specialty">Specialty</a></li>
+            <li><a href="#subjects">Subjects</a></li>
+            <li><a href="#goal">Goal</a></li>
+            <li><a href="#weekly">Schedule</a></li>
+            <li><a href="my_major.html">My Major</a></li>
+        </ul>
+    </header>
+
+    <!-- المحتوى الرئيسي -->
+    <main class="main">
+        <div class="grid-container">
+            <div class="content-box">
+                <img src="../8/img.jpg" alt="Student" width="200" class="nav-img">
+                <h3><u>I am a student</u></h3>
+                <p><i>I study at Sana'a University.</i></p>
+                <a href="https://sar.su.edu.ye" class="extra-link" target="_blank">University Website</a>
+            </div>
+
+            <div class="content-box" id="specialty">
+                <h3>My Specialty</h3>
+                <p><del>IT</del> Cyber Security</p>
+            </div>
+
+            <div class="content-box" id="subjects">
+                <h4>The Subjects I Study</h4>
+                <ol>
+                    <li>Web development</li>
+                    <li>Object-oriented programming</li>
+                    <li>Databases</li>
+                    <li>Information security</li>
+                    <li>Computer networks</li>
+                    <li>Statistics and Probability</li>
+                </ol>
+            </div>
+
+            <div class="content-box" id="goal">
+                <h4>My Goal</h4>
+                <p>To be a person who benefits my nation and homeland.</p>
+            </div>
+
+            <div class="content-box" id="weekly">
+                <h4>My Weekly Study Schedule</h4>
+                <table>
+                    <tr>
+                        <th>Day</th>
+                        <th>Subject</th>
+                    </tr>
+                    <tr>
+                        <td>Sat</td>
+                        <td>Web development</td>
+                    </tr>
+                    <tr>
+                        <td>Sun</td>
+                        <td>Object-oriented programming</td>
+                    </tr>
+                    <tr>
+                        <td>Mon</td>
+                        <td>Databases</td>
+                    </tr>
+                    <tr>
+                        <td>Tue</td>
+                        <td>Information security</td>
+                    </tr>
+                    <tr>
+                        <td>Wed</td>
+                        <td>Computer networks</td>
+                    </tr>
+                    <tr>
+                        <td>Thu</td>
+                        <td>Statistics and Probability</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        &copy; 2025 My Website | All rights reserved
+    </footer>
+
+    <!-- ربط ملف الجافاسكربت الخارجي -->
+    <script src="../8/project/js/script.js"></script>
+</body>
+
+</html>

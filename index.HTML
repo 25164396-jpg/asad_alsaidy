@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="../8/project/CSS/style.css">
+</head>
+<style>
+/* الثيم الليلي */
+.dark-mode {
+background: #1e1e1e !important;
+color: #ffffff;
+}
+
+.dark-mode .content-box {
+background: #333 !important;
+color: #fff;
+box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .header,
+.dark-mode .footer {
+background: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* زر تبديل الثيم */
+.theme-btn {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background: #ff9800;
+color: white;
+border: none;
+padding: 10px 15px;
+border-radius: 8px;
+cursor: pointer;
+font-weight: bold;
+transition: background 0.3s;
+}
+
+.theme-btn:hover {
+background: #e68900;
+}
+</style>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1 class="logo">Our Website</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main class="main">
+        <div class="form-container">
+            <h2>Welcome to Our Website!</h2>
+            <p>We're happy to have you here ✨</p>
+            <h3>What would you like to do?</h3>
+
+            <form action="signup.html" method="get" class="form">
+                <input type="submit" value="Create a New Account" class="btn">
+            </form>
+
+            <form action="login.html" method="get" class="form">
+                <input type="submit" value="Login" class="btn">
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Our Website. All rights reserved.</p>
+    </footer>
+        <script src="../8/project/js/script.js"></script>
+
+</body>
+
+</html>
