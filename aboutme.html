@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Page with JS Effects</title>
-    <link rel="stylesheet" href="../project/CSS/style.css">
+    <!-- تعديل مسار CSS -->
+    <link rel="stylesheet" href="project/CSS/style.css">
     <style>
         body {
             margin: 0;
@@ -122,41 +123,42 @@
                 gap: 1rem;
             }
         }
+
         /* الثيم الليلي */
-.dark-mode {
-    background: #1e1e1e !important;
-    color: #ffffff;
-}
+        .dark-mode {
+            background: #1e1e1e !important;
+            color: #ffffff;
+        }
 
-.dark-mode .content-box {
-    background: #333 !important;
-    color: #fff;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
-}
+        .dark-mode .content-box {
+            background: #333 !important;
+            color: #fff;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+        }
 
-.dark-mode .header,
-.dark-mode .footer {
-    background: rgba(255, 255, 255, 0.1) !important;
-}
+        .dark-mode .header,
+        .dark-mode .footer {
+            background: rgba(255, 255, 255, 0.1) !important;
+        }
 
-/* زر تبديل الثيم */
-.theme-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #ff9800;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background 0.3s;
-}
+        /* زر تبديل الثيم */
+        .theme-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #ff9800;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
 
-.theme-btn:hover {
-    background: #e68900;
-}
+        .theme-btn:hover {
+            background: #e68900;
+        }
 
     </style>
 </head>
@@ -178,7 +180,8 @@
     <main class="main">
         <div class="grid-container">
             <div class="content-box">
-                <img src="../img.jpg" alt="Student" width="200" class="nav-img">
+                <!-- تعديل مسار الصورة -->
+                <img src="project/img/img.jpg" alt="Student" width="200" class="nav-img">
                 <h3><u>I am a student</u></h3>
                 <p><i>I study at Sana'a University.</i></p>
                 <a href="https://sar.su.edu.ye" class="extra-link" target="_blank">University Website</a>
@@ -248,8 +251,7 @@
     </footer>
 
     <!-- ربط ملف الجافاسكربت الخارجي -->
-    <script src="../project/js/script.js"></script>
+    <script src="project/js/script.js"></script>
 </body>
-
 
 </html>
