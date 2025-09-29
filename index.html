@@ -1,89 +1,79 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Page</title>
+    <title>My Page with JS Effects</title>
     <link rel="stylesheet" href="project/CSS/style.css">
 </head>
-<style>
-/* الثيم الليلي */
-.dark-mode {
-background: #1e1e1e !important;
-color: #ffffff;
-}
 
-.dark-mode .content-box {
-background: #333 !important;
-color: #fff;
-box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
-}
-
-.dark-mode .header,
-.dark-mode .footer {
-background: rgba(255, 255, 255, 0.1) !important;
-}
-
-/* زر تبديل الثيم */
-.theme-btn {
-position: fixed;
-bottom: 20px;
-right: 20px;
-background: #ff9800;
-color: white;
-border: none;
-padding: 10px 15px;
-border-radius: 8px;
-cursor: pointer;
-font-weight: bold;
-transition: background 0.3s;
-}
-
-.theme-btn:hover {
-background: #e68900;
-}
-</style>
 <body>
-
-    <!-- Header -->
     <header class="header">
-        <h1 class="logo">Our Website</h1>
-        <nav>
-            <ul class="nav-list">
-                <li><a href="signup.html">Sign Up</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
+        <div class="logo">My Website</div>
+        <ul class="nav-list">
+            <li><a href="#specialty">Specialty</a></li>
+            <li><a href="#subjects">Subjects</a></li>
+            <li><a href="#goal">Goal</a></li>
+            <li><a href="#weekly">Schedule</a></li>
+            <li><a href="my_major.html">My Major</a></li>
+        </ul>
     </header>
 
-    <!-- Main Section -->
     <main class="main">
-        <div class="form-container">
-            <h2>Welcome to Our Website!</h2>
-            <p>We're happy to have you here ✨</p>
-            <h3>What would you like to do?</h3>
+        <div class="grid-container">
+            <div class="content-box">
+                <img src="project/img.jpg" alt="Student" width="200" class="nav-img">
+                <h3><u>I am a student</u></h3>
+                <p><i>I study at Sana'a University.</i></p>
+                <a href="https://sar.su.edu.ye" target="_blank">University Website</a>
+            </div>
 
-            <form action="signup.html" method="get" class="form">
-                <input type="submit" value="Create a New Account" class="btn">
-            </form>
+            <div class="content-box" id="specialty">
+                <h3>My Specialty</h3>
+                <p><del>IT</del> Cyber Security</p>
+            </div>
 
-            <form action="login.html" method="get" class="form">
-                <input type="submit" value="Login" class="btn">
-            </form>
+            <div class="content-box" id="subjects">
+                <h4>The Subjects I Study</h4>
+                <ol>
+                    <li>Web development</li>
+                    <li>Object-oriented programming</li>
+                    <li>Databases</li>
+                    <li>Information security</li>
+                    <li>Computer networks</li>
+                    <li>Statistics and Probability</li>
+                </ol>
+            </div>
+
+            <div class="content-box" id="goal">
+                <h4>My Goal</h4>
+                <p>To be a person who benefits my nation and homeland.</p>
+            </div>
+
+            <div class="content-box" id="weekly">
+                <h4>My Weekly Study Schedule</h4>
+                <table>
+                    <tr>
+                        <th>Day</th>
+                        <th>Subject</th>
+                    </tr>
+                    <tr><td>Sat</td><td>Web development</td></tr>
+                    <tr><td>Sun</td><td>Object-oriented programming</td></tr>
+                    <tr><td>Mon</td><td>Databases</td></tr>
+                    <tr><td>Tue</td><td>Information security</td></tr>
+                    <tr><td>Wed</td><td>Computer networks</td></tr>
+                    <tr><td>Thu</td><td>Statistics and Probability</td></tr>
+                </table>
+            </div>
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2025 Our Website. All rights reserved.</p>
+        &copy; 2025 My Website | All rights reserved
     </footer>
-        <script src="../8/project/js/script.js"></script>
 
+    <script src="project/js/script.js"></script>
 </body>
 
 </html>
-
-
-
-
